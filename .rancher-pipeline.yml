@@ -1,0 +1,10 @@
+stages:
+- name: Build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: atriarch-halin:latest
+      registry: index.docker.io
+timeout: 60
+notification: {}
