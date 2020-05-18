@@ -16,8 +16,8 @@
     "type": "git",
     "url": "https://github.com/moxious/halin.git"
   },
-  "homepage": "http://halin.graphapp.io/",
-  "private": false,
+  "homepage": "http://halin.drink.me/",
+  "private": true,
   "dependencies": {
     "@sentry/browser": "^5.15.5",
     "autobind-decorator": "2.2.1",
