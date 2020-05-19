@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atriarch-halin-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: atriarch-halin
+  template:
+    metadata:
+      labels:
+        app: atriarch-halin
+    spec:
+      containers:
+      - name: atriarch-halin-container
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Development"
+      imagePullSecrets:
+      - name: pipeline-docker-registry
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: atriarch-halin-service
+spec:
+  ports:
+  - name: http
+    targetPort: 3000
+    port: 3000
+  selector:
+    app: atriarch-halin
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: atriarch-halin-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: halin.drinkpoint.me
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: atriarch-halin-service
+          servicePort: http
