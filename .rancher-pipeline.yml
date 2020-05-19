@@ -8,4 +8,9 @@ stages:
       pushRemote: true
       registry: http://nexus.drinkpoint.me/repository/atriarch-docker/
 timeout: 60
-notification: {}
+notification:
+  recipients:
+  - recipient: dan@mail.atriarch.systems
+    notifier: c-xc9r9:n-g2gcc
+  condition:
+  - Success
