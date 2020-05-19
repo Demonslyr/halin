@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: atriarch-halin-container
-        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        image: ${CICD_IMAGE}:v1.0.${CICD_EXECUTION_SEQUENCE}
         env:
         - name: ASPNETCORE_ENVIRONMENT
           value: "Development"
