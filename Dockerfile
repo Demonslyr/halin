@@ -12,7 +12,7 @@ ENV PORT 3000
 # install and cache app dependencies
 COPY . /app
 RUN npm config set registry https://neo.jfrog.io/neo/api/npm/npm/
-RUN yarn install --prod
+RUN yarn install
 RUN yarn build
 RUN yarn postbuild
 EXPOSE 3000
