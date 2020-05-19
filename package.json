@@ -14,9 +14,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/moxious/halin.git"
+    "url": "https://github.com/Demonslyr/halin.git"
   },
-  "homepage": "http://halin.graphapp.io/",
+  "homepage": "http://halin.drinkpoint.me/",
   "private": false,
   "dependencies": {
     "@sentry/browser": "^5.15.5",
