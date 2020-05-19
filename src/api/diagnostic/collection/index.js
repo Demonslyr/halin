@@ -6,7 +6,7 @@ import _ from 'lodash';
 import uuid from 'uuid';
 import moment from 'moment';
 import Promise from 'bluebird';
-import appPkg from '../../../package.json';
+import appPkg from '../../../../package.json';
 import appBuild from '../../../build.json';
 import neo4j from '../../driver/index';
 import sentry from '../../sentry/index.js';
