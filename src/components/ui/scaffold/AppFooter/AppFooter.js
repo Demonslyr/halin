@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { List, Image } from 'semantic-ui-react';
 import api from '../../../../api/';
 import appPkg from '../../../../package.json';
-import build from '../../../../build.json';
+import build from '../../../../../build.json';
 import moment from 'moment';
 
 import './AppFooter.css';
