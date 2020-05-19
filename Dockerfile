@@ -20,4 +20,4 @@ EXPOSE 3000
 ENV PATH /app/node_modules/.bin:$PATH
 
 # start app
-CMD ["/usr/local/bin/yarn", "start --env=production"]
+CMD ["node", "index.js"]
