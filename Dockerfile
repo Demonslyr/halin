@@ -16,11 +16,11 @@ RUN yarn build
 RUN ls
 
 FROM base AS final
-COPY --from=build /app/build ./build
+COPY --from=build /app/dist ./dist
 RUN yarn install serve
 EXPOSE 3000
 
 ENV PATH /app/node_modules/.bin:$PATH
 
 # start app
-CMD ["serve", "-s build"]
+CMD ["serve", "-s dist"]
