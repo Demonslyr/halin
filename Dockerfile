@@ -19,4 +19,4 @@ EXPOSE 3000
 ENV PATH /app/node_modules/.bin:$PATH
 
 # start app
-CMD ["serve", "-s dist"]
+CMD ["serve", "-s /app/dist"]
