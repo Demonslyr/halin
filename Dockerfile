@@ -17,6 +17,8 @@ RUN ls
 
 FROM base AS final
 COPY --from=build /app/dist ./dist
+COPY --from=build /app/yarn.lock ./yarn.lock
+COPY --from=build /app/package.json ./package.json
 RUN yarn install serve
 EXPOSE 3000
 
