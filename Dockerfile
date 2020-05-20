@@ -13,10 +13,10 @@ COPY . /app
 RUN npm config set registry https://neo.jfrog.io/neo/api/npm/npm/
 RUN yarn install --prod
 RUN yarn build
-RUN yarn add serve
+RUN yarn global add serve
 EXPOSE 3000
 
 ENV PATH /app/node_modules/.bin:$PATH
 
 # start app
-CMD ["serve", "-s /app/dist"]
+CMD ["serve", "/app/dist"]
