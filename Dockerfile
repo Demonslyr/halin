@@ -16,7 +16,7 @@ RUN yarn install --prod
 RUN yarn build
 
 FROM base AS final
-COPY --from=build build ./build
+COPY --from=build /app/build ./build
 RUN yarn install serve
 EXPOSE 3000
 
