@@ -35,7 +35,7 @@
     "react-dom": "^16.12.0",
     "react-graph-vis": "^1.0.2",
     "react-minimal-pie-chart": "^4.0.0",
-    "react-scripts": "<=3.4.0",
+    "react-scripts": "^3.4.1",
     "react-sortable-tree": "^2.2.0",
     "react-table": "^6.8.6",
     "react-timeseries-charts": "^0.16.1",
@@ -57,7 +57,9 @@
     "eject": "./node_modules/.bin/react-scripts eject",
     "postbuild": "rm -rf dist && mv build dist",
     "prepublishOnly": "npm run build",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint . && prettier-eslint --list-different $PWD/'**/*.js'",
+    "lint-fix": "eslint --fix . && prettier-eslint --list-different $PWD/'**/*.js'",
+    "format": "prettier-eslint --write $PWD/'**/*.js'"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -66,7 +68,11 @@
     "@babel/plugin-proposal-class-properties": "^7.2.1",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-react": "^7.20.0",
     "jest-expect-message": "^1.0.2",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0",
     "react-test-renderer": "^16.8.3",
     "sinon": "^7.2.6"
   },

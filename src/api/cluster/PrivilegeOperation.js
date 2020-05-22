@@ -240,4 +240,4 @@ export default class PrivilegeOperation {
 
         return `${op} ${priv} ON ${graphToken} ${db} ${entity} ${preposition} ${role}`;
     }
-};
+}

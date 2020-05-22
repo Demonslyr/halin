@@ -125,4 +125,4 @@ export default class CypherPieChart extends Component {
             </div>
         );
     }
-};
+}

@@ -42,7 +42,7 @@ export default class DatabaseSelector extends Component {
     };
 
     UNSAFE_componentWillMount() {
-        this.listenerFn = (e) => {
+        this.listenerFn = () => {
             const dbs = window.halinContext.databases();
             // The selected database could no longer exist, or it could now exist with a different
             // status.  For all of these reasons we must update the selection so the view knows.

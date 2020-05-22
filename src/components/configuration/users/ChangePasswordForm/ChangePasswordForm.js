@@ -115,4 +115,4 @@ export default class ChangePasswordForm extends Component {
             </div>
         );
     }
-};
+}

@@ -73,7 +73,7 @@ class DatabaseStatusIcon extends Component {
             }/>
         );
     }
-};
+}
 
 DatabaseStatusIcon.props = {
     db: PropTypes.object,

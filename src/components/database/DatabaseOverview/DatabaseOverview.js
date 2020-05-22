@@ -138,7 +138,7 @@ class DatabaseOverview extends Component {
                     &nbsp;undergoing leader election</p> }
             </HalinCard>
         );
-    };
+    }
 }
 
 DatabaseOverview.props = {

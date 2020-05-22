@@ -197,5 +197,5 @@ export default class ClusterTransactionStatus extends Component {
             </HalinCard>
         );
     }
-};
+}
 

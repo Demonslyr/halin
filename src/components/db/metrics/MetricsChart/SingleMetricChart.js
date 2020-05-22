@@ -40,7 +40,7 @@ const LABELS = {
 const humanPrintNumber = val =>
     val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-const NullMarker = props => {
+const NullMarker = () => {
     return <g />;
 };
 

@@ -15,7 +15,7 @@ describe('DataFeed', function () {
         displayColumns: [
             { header: "Value", accessor: 'value' },
         ],
-    };;
+    };
 
     describe('Prior to Run Start', function () {
         beforeEach(() => {
