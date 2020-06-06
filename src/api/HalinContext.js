@@ -8,7 +8,7 @@ import ClusterManager from './cluster/ClusterManager';
 import ClusterMemberSet from './cluster/ClusterMemberSet';
 import DatabaseSet from './DatabaseSet';
 import DataFeed from './data/DataFeed';
-import pkg from '../package.json';
+import pkg from '../../package.json';
 import build from '../build.json';
 import moment from 'moment';
 

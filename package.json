@@ -17,7 +17,7 @@
     "url": "https://github.com/Demonslyr/halin.git"
   },
   "homepage": "http://halin.drinkpoint.me/",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@sentry/browser": "^5.15.5",
     "autobind-decorator": "2.2.1",

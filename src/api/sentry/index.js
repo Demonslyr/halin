@@ -4,7 +4,7 @@
  */
 /* eslint-disable no-console */
 import * as Sentry from '@sentry/browser';
-import appPkg from '../../package.json';
+import appPkg from '../../../package.json';
 import _ from 'lodash';
 
 let initialized = false;
