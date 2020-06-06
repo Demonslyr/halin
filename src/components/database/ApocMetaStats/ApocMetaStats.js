@@ -128,7 +128,7 @@ class ApocMetaStatsCard extends Component {
                 <Stats {...this.props} />
             </HalinCard>
         );
-    };
+    }
 }
 
 ApocMetaStatsCard.props = {

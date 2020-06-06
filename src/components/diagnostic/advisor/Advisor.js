@@ -132,7 +132,7 @@ export default class Advisor extends Component {
     }
 
     getDatabases() {
-        if (!this.props.data) { return [] };
+        if (!this.props.data) { return [] }
         const allDbs = this.props.data.map(inspResult => inspResult.database).filter(d => d);
         return _.uniq(allDbs).sort();
     }
@@ -151,7 +151,7 @@ export default class Advisor extends Component {
                     filename={`Halin-diagnostic-results-${moment.utc().format()}.csv`} />
 
                 <ReactTable
-                    defaultFilterMethod={(filter, row, column) => {
+                    defaultFilterMethod={(filter, row) => {
                         const id = filter.pivotId || filter.id
                         return row[id] !== undefined ? String(row[id]).indexOf(filter.value) > -1 : true
                     }}

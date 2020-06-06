@@ -58,7 +58,7 @@ export default class DataFeedStats extends Component {
             { Header: 'Packets', accessor: 'packets' },
         ];
 
-        const data = this.dataFeedStats().map((stats, idx) => ({
+        const data = this.dataFeedStats().map((stats) => ({
             member: stats.node.getLabel(),
             query: stats.label,
             best: datautil.roundToPlaces(stats.min, 2),

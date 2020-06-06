@@ -42,4 +42,4 @@ export default class ConnectionDetailsProvider extends Component {
             />
         )
     }
-};
+}

@@ -25,4 +25,4 @@ export default class TaskDetailModal extends Component {
             </Modal>
         );
     }
-};
+}

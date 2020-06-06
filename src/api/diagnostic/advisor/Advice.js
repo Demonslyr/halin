@@ -39,7 +39,7 @@ export default class Advice {
     static error(props) { return Advice.makeLevel(Advice.ERROR, props); }
     static warn(props) { return Advice.makeLevel(Advice.WARN, props); }
     static info(props) { return Advice.makeLevel(Advice.INFO, props); }
-};
+}
 
 Advice.CLUSTER = 'overall';
 Advice.WARN = 'warning';

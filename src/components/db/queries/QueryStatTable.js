@@ -5,7 +5,7 @@ import ReactTable from 'react-table';
 const QueryStatTable = (props) => {
     return (
         <ReactTable
-            defaultFilterMethod={(filter, row, column) => {
+            defaultFilterMethod={(filter, row) => {
                 const id = filter.pivotId || filter.id
                 return row[id] !== undefined ? String(row[id]).indexOf(filter.value) > -1 : true
             }}
