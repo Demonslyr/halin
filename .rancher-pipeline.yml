@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: atriarchsystems/atriarch-halin:v1.0.${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: index.docker.io
+      registry: nexus.atriarch.systems/repository/atriarch-docker/
 - name: Deploy
   steps:
   - applyYamlConfig:
