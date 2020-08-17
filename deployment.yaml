@@ -41,7 +41,7 @@ metadata:
   name: atriarch-halin-ingress
   namespace: atriarch-halin # The namespace the app will use  
   annotations:
-    kubernetes.io/ingress.class: traefik
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
   - host: halin.drinkpoint.me
