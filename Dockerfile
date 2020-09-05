@@ -1,5 +1,5 @@
 # base image
-FROM node:13.5.0-stretch as base
+FROM node:14.9-stretch-slim as base
 RUN apt-get update && apt-get install -y yarn
 
 # set working directory
