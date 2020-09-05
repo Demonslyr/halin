@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: atriarch-halin-deployment
-  namespace: atriarch-halin # The namespace the app will use
+  namespace: atriarch-utilities # The namespace the app will use
 spec:
   replicas: 1
   selector:
@@ -26,7 +26,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: atriarch-halin-service
-  namespace: atriarch-halin # The namespace the app will use
+  namespace: atriarch-utilities # The namespace the app will use
 spec:
   ports:
   - name: http
@@ -39,7 +39,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: atriarch-halin-ingress
-  namespace: atriarch-halin # The namespace the app will use  
+  namespace: atriarch-utilities # The namespace the app will use  
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
