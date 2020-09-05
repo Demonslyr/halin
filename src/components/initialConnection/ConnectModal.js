@@ -17,7 +17,7 @@ class ConnectForm extends Component {
     state = {
         username: privateLocalCreds.username || process.env.NEO4J_USERNAME || 'neo4j',
         password: privateLocalCreds.password || process.env.NEO4J_PASSWORD || '',
-        host: privateLocalCreds.host || process.env.NEO4J_URI || 'http://veo4j.drinkpoint.me',
+        host: privateLocalCreds.host || process.env.NEO4J_URI || 'veo4j.drinkpoint.me',
         port: privateLocalCreds.port || 7687,
         encrypted: _.isNil(privateLocalCreds.encrypted) ? false : privateLocalCreds.encrypted,
         errors: {
